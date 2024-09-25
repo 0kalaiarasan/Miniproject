@@ -1,0 +1,78 @@
+/* src/styles/stockList.css */
+
+/* Body Styles */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Cool gradient background for the entire page */
+    color: #333; /* Dark text for readability */
+    font-family: 'Roboto', sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+}
+
+/* Main Stock List Container */
+.stock-list-container {
+    max-width: 1200px; /* Max width for stock list */
+    width: 90%; /* Full width */
+    margin: 50px auto; /* Center the container with margin */
+    padding: 20px; /* Padding inside the container */
+    background-color: white; /* White background for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Title Styles */
+.stock-list-container h2 {
+    color: #6a11cb; /* Color for stock list title */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Margin below title */
+}
+
+/* Stock Item Card Styles */
+.stock-card {
+    background-color: #f9f9f9; /* Light background for stock cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside stock cards */
+    margin: 10px 0; /* Margin above and below cards */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+/* Stock Card Hover Effect */
+.stock-card:hover {
+    transform: translateY(-5px); /* Raise card on hover */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Button Styles */
+.button {
+    background-color: #6a11cb; /* Primary color */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    display: block; /* Block display for buttons */
+    width: 100%; /* Full width buttons */
+    margin: 20px auto; /* Center button */
+}
+
+/* Button Hover Styles */
+.button:hover {
+    background-color: #2575fc; /* Lighter shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .stock-list-container {
+        padding: 15px; /* Less padding on smaller screens */
+        margin: 20px; /* Reduce margin on smaller screens */
+    }
+
+    .stock-card {
+        padding: 10px; /* Adjust padding inside stock cards */
+    }
+
+    .button {
+        padding: 12px; /* Adjust button padding */
+    }
+}

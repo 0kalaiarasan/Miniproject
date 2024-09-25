@@ -1,0 +1,75 @@
+/* src/styles/login.css */
+
+/* Body Styles */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background for the entire page */
+    color: #333; /* Dark text for readability */
+    font-family: 'Roboto', sans-serif; /* Font family */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Login Container */
+.login-container {
+    background-color: #ffffff; /* White background for login form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 40px; /* Padding around the content */
+    width: 300px; /* Fixed width for the login form */
+    text-align: center; /* Center text */
+}
+
+/* Header of Login Form */
+.login-container h2 {
+    margin-bottom: 20px; /* Space below heading */
+    color: #6a11cb; /* Color for heading */
+}
+
+/* Input Fields */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside input */
+    margin: 10px 0; /* Margin for spacing */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button Styles */
+.login-container button {
+    background-color: #6a11cb; /* Primary color */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.login-container button:hover {
+    background-color: #2575fc; /* Lighter shade on hover */
+}
+
+/* Link Styles */
+.login-container .register-link {
+    display: block; /* Block display for full width */
+    margin-top: 20px; /* Margin above link */
+    color: #6a11cb; /* Color for link */
+    text-decoration: none; /* Remove underline */
+}
+
+.login-container .register-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%; /* Full width on smaller screens */
+        padding: 20px; /* Less padding on smaller screens */
+    }
+}
