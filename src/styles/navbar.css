@@ -1,0 +1,61 @@
+/* src/styles/NavBar.css */
+
+/* Global Styles for Navbar */
+.navbar {
+    background: linear-gradient(to right, #007bff, #00c6ff); /* Gradient background */
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 15px 20px; /* Padding around navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    color: white; /* Text color for brand */
+    font-size: 1.5rem; /* Font size for brand */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Navbar Links */
+.navbar-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between links */
+}
+
+.navbar-link {
+    color: white; /* Text color for links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar-links {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width for links */
+        margin-top: 10px; /* Space above links */
+    }
+
+    .navbar-link {
+        width: 100%; /* Full width links */
+        text-align: center; /* Center text */
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}

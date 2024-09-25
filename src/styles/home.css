@@ -1,0 +1,100 @@
+/* src/styles/home.css */
+
+/* Body Styles */
+body {
+    background: linear-gradient(to bottom right, #ff758c, #ff7eb3); /* Gradient background for the entire page */
+    color: #333; /* Dark text for readability */
+    font-family: 'Roboto', sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding around header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Center text */
+}
+
+/* Main Content Container */
+.main-container {
+    max-width: 1200px; /* Max width for main content */
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding inside the container */
+    margin: 20px; /* Margin around the container */
+    background-color: white; /* White background for main content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Section Styles */
+.section {
+    margin: 20px 0; /* Margin above and below sections */
+    padding: 15px; /* Padding inside sections */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+}
+
+/* Title Styles */
+.section h2 {
+    color: #ff758c; /* Color for section titles */
+}
+
+/* Card Styles for Stock Items */
+.card {
+    background-color: #f9f9f9; /* Light background for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside cards */
+    margin: 10px 0; /* Margin above and below cards */
+    transition: transform 0.2s; /* Scale effect on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Button Styles */
+.button {
+    background-color: #ff758c; /* Primary color */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #ff7eb3; /* Lighter shade on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 15px 0; /* Padding above and below */
+    position: relative; /* Positioning */
+    width: 100%; /* Full width */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-container {
+        margin: 10px; /* Reduce margin on smaller screens */
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    .card {
+        padding: 15px; /* Less padding inside cards */
+    }
+
+    .button {
+        width: 100%; /* Full width buttons */
+    }
+}

@@ -1,0 +1,71 @@
+/* src/styles/header.css */
+
+/* Header Container */
+header {
+    background: linear-gradient(to right, #007bff, #00c6ff); /* Blue gradient for header background */
+    color: white; /* White text for contrast */
+    padding: 15px 0; /* Vertical padding */
+    text-align: center; /* Center text */
+}
+
+/* Logo */
+header .logo {
+    font-size: 24px; /* Font size for logo */
+    font-weight: bold; /* Bold font for logo */
+    margin-bottom: 10px; /* Space below logo */
+}
+
+/* Navigation Links */
+nav {
+    margin: 10px 0; /* Margin for nav */
+}
+
+nav a {
+    color: #ffffff; /* White links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Space between links */
+    font-size: 18px; /* Font size for nav links */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Search Input */
+header input[type="text"] {
+    padding: 10px; /* Padding inside input */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ffffff; /* White border */
+    width: 300px; /* Fixed width for input */
+    margin-top: 10px; /* Space above input */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0; /* Less padding on smaller screens */
+    }
+
+    nav a {
+        margin: 0 10px; /* Less space between links on mobile */
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    header input[type="text"] {
+        width: 80%; /* Full width input on smaller screens */
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center; /* Center text utility */
+}
+
+.mb-20 {
+    margin-bottom: 20px; /* Margin bottom utility */
+}
+
+.p-20 {
+    padding: 20px; /* Padding utility */
+}

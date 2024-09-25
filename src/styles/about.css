@@ -1,0 +1,92 @@
+/* src/styles/about.css */
+
+.about-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+    margin-bottom: 20px;
+    text-align: center;/* src/styles/about.css */
+
+    /* Global Styles for About Page */
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Warm gradient background */
+        color: #333; /* Dark text for readability */
+    }
+    
+    /* Container for About Section */
+    .about-container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white; /* White background for contrast */
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Heading Styles */
+    .about-title {
+        text-align: center;
+        font-size: 2.5em;
+        color: #ff6f61; /* Coral color for headings */
+        margin-bottom: 20px;
+    }
+    
+    /* Paragraph Styles */
+    .about-description {
+        line-height: 1.6;
+        margin: 20px 0;
+        font-size: 1.2em; /* Slightly larger font for better readability */
+    }
+    
+    /* Responsive Image */
+    .about-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px 0; /* Spacing around images */
+    }
+    
+    /* List Styles */
+    .about-list {
+        list-style: disc; /* Disc style for list items */
+        padding-left: 20px; /* Indentation for list */
+    }
+    
+    /* List Item Styles */
+    .about-list-item {
+        margin-bottom: 10px; /* Spacing between list items */
+    }
+    
+    /* Footer Styles */
+    .about-footer {
+        text-align: center;
+        margin-top: 40px; /* Space above footer */
+        padding: 10px;
+        background-color: #343a40; /* Dark footer background */
+        color: white; /* White text for footer */
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .about-title {
+            font-size: 2em; /* Smaller font size on mobile */
+        }
+    
+        .about-description {
+            font-size: 1em; /* Smaller font for better fitting */
+        }
+    }
+    
+}
+
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #666;
+}

@@ -1,0 +1,97 @@
+/* src/styles/contact.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3); /* Soft gradient background for Contact page */
+    color: #333; /* Dark text for readability */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent Bootstrap primary color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main Container */
+.contact-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Button Styles */
+button {
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Dark footer background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    form input, form textarea {
+        font-size: 14px; /* Smaller font size for inputs on mobile */
+    }
+
+    button {
+        width: 100%; /* Full-width button on mobile */
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.p-20 {
+    padding: 20px;
+}
